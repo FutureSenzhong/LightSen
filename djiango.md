@@ -16,4 +16,6 @@ viryualenv --no-site-packages -p 加python版本路径（如果有多个版本） 加虚拟环境文
 
 ```
 pip list 显示pip包
+
+pip freeze 版本信息
 ```
