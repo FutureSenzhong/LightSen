@@ -66,14 +66,14 @@ pymysql.install_as_MySQLdb()
 ```
 python manage.py migtate
 ```
--权限配置表
+- 权限配置表
     - attu_group
     - attu_group_permissions
     - auth_permission
     - auth_user
     - auth_user_groups
     - auth_user_user_permissions
--其他信息
+- 其他信息
     - django_admin_logo
     - django_content_type
     - django_migrations
