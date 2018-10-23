@@ -111,7 +111,7 @@ python manage.py changepassword username
 ```
 python manage.py startapp app
 ```
-- 在setting中添加app功能名称
+### 在setting中添加app功能名称
 ```
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -129,7 +129,12 @@ ORM object-relational-mapping
 ### 生成迁移文件
 ```
 python manage.py makemigrations
+
 ```
+### 执行迁移命令
+```
+python manage.py migrate
+``` 
 ### 设置urls.py访问路径
 ```
 from django.conf.urls import url
