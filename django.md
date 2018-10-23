@@ -62,7 +62,7 @@ import pymysql
 
 pymysql.install_as_MySQLdb()
 
-
+```
 ### 生成迁移文件
 ```
 python manage.py makemigrations
@@ -84,6 +84,7 @@ python manage.py migrate
     - django_content_type
     - django_migrations
     - django_session
+
 
 ### 访问后台
 ```
