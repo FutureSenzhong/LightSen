@@ -8,7 +8,7 @@ mvt
 
 创建一个干净的：
 ```
-viryualenv --no-site-packages -p 加python版本路径（如果有多个版本） 加虚拟环境文件名称
+virtualenv --no-site-packages -p 加python版本路径（如果有多个版本） 加虚拟环境文件名称
 ```
 激活虚拟环境命令 activate（在虚拟环境安装依赖库的时候）
 
@@ -67,8 +67,8 @@ pymysql.install_as_MySQLdb()
 python manage.py migtate
 ```
 - 权限配置表
-    - attu_group
-    - attu_group_permissions
+    - auth_group
+    - auth_group_permissions
     - auth_permission
     - auth_user
     - auth_user_groups
