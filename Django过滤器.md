@@ -23,10 +23,10 @@
 | join	          | 用指定分隔符连接列表	| {{ [‘abc’,’45’] \| join:’*’ }} 返回 abc*45                                |
 | length          | 返回列表中元素的个数或字符串长度|	                                                                         |
 | length_is	  | 检查列表，字符串长度是否符合指定的值|	{{ ‘hello’\| length_is:’3’ }}                                 |
-| linebreaks	  | 用<p>或<br>标签包裹变量	| {{ “Hi\n\nDavid”\|linebreaks }} 返回<p>Hi</p><p>David</p>                     |
-| linebreaksbr	  | 用<br/>标签代替换行符	|                                                                                |
+| linebreaks	  | 用\<p>或\<br>标签包裹变量	| {{ “Hi\n\nDavid”\| linebreaks }} 返回<p>Hi</p><p>David</p>                     |
+| linebreaksbr	  | 用\<br/>标签代替换行符	|                                                                                |
 | linenumbers	  | 为变量中的每一行加上行号	 |                                                                               |   
-| ljust	          | 输出指定长度的字符串，变量左对齐|	{{‘ab’\|ljust:5}}返回 ‘ab   ’                                         |
+| ljust	          | 输出指定长度的字符串，变量左对齐|	{{‘ab’\| ljust:5}}返回 ‘ab   ’                                         |
 | lower	          | 字符串变小写	 |                                                                                       |
 | make_list	  | 将字符串转换为列表	 |                                                                                       |  
 | pluralize	  | 根据数字确定是否输出英文复数符号|	                                                                         |
@@ -46,6 +46,6 @@
 | urlencode	  | 将字符串中的特殊字符转换为url兼容表达方式|	{{ ‘http://www.aaa.com/foo?a=b&b=c’ \| urlencode}}             |
 | urlize          | 将变量字符串中的url由纯文本变为链接	 |                                                                       |
 | wordcount	  | 返回变量字符串中的单词数	 |                                                                               |
-| yesno	          | 将布尔变量转换为字符串yes, no 或maybe|   <p>{{ True \| yesno }}</p> <p>{{ False \| yesno }}</p><p>{{ None \| yesno }}</p><p>返回</p><p>yes</p><p>no</p><p>maybe</p>|                                            |
+| yesno	          | 将布尔变量转换为字符串yes, no 或maybe|   <p>{{ True \| yesno }}<p>{{ False \| yesno }}<p>{{ None \| yesno }}<p>返回<p>yes<p>no<p>maybe|                                            |
                                                                                                       
                                                                                                                
