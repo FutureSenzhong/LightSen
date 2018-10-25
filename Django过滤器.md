@@ -41,7 +41,7 @@
 | timeuntil	  | 以“从现在开始到时间变量”还有多长时间显示时间变量|	                                                         |
 | title	          | 每个单词首字母大写	 |                                                                                       |
 | truncatewords	  | 将字符串转换为省略表达方式|	{{ 'This is a pen' \| truncatewords:2 }} 返回  This is ...     |                                                                                                              |
-| truncatewords_html|同上，但保留其中的HTML标签|	 {{ \<p>This is a pen\</p> \| truncatewords:2 }}返回\<p>This is ...\</p>   |
+| truncatewords_html|同上，但保留其中的HTML标签|	 {{ \<p>This is a pen\</p> \| truncatewords_html:2 }}返回\<p>This is ...\</p>   |
 | urlencode	  | 将字符串中的特殊字符转换为url兼容表达方式|	{{ ‘http://www.aaa.com/foo?a=b&b=c’ \| urlencode}}             |
 | urlize          | 将变量字符串中的url由纯文本变为链接	 |                                                                       |
 | wordcount	  | 返回变量字符串中的单词数	 |                                                                               |
