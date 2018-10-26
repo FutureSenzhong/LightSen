@@ -119,13 +119,22 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-# 加载静态文件
+### 加载静态文件
 
 {% load static %}
         <link rel="stylesheet" href="{% static 'css/index.css' %}">
 
 ```
+### 向服务器提交数据用form表单标签
 
+#### 定义和用法
+<p>\<form> 标签用于为用户输入创建 HTML 表单。
+
+<p>表单能够包含 input 元素，比如文本字段、复选框、单选框、提交按钮等等。
+
+<p>表单还可以包含 menus、textarea、fieldset、legend 和 label 元素。
+
+<p>表单用于向服务器传输数据。
 
 ### Django模型字段类
 
