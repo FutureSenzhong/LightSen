@@ -1,6 +1,7 @@
 # Django图片的上传与下载实现
 
 ### 文件目录结构展示
+
 ![](./img/Django目录结构.png)
 
 ### 在app文件夹中的models.py中创建模型
