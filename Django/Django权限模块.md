@@ -10,7 +10,7 @@
 - 用户表和组表关联ManyToManyFiled() 关联词：groups
 - 组表和权限表关联ManyToManyFiled() 关联词：permissions
 
-### 添加与删除：add（） remove()
+### 添加与删除：add(), remove()
 
 ### 查询功能
 ```
