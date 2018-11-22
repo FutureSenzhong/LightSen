@@ -64,7 +64,7 @@ main.py
 
 
 ### 2.读取session
- 因为session就像字典一样所以，操作它的时候有两种方法：
+因为session就像字典一样所以，操作它的时候有两种方法：
 
 （1）result = session[‘key’] ：如果内容不存在，将会报异常
 
@@ -173,8 +173,8 @@ main.py
          app.run()
 
 
-##三、设置session的过期时间
- 如果没有指定session的过期时间，那么默认是浏览器关闭后就自动结束。session.permanent = True在flask下则可以将有效期延长至一个月。下面有方法可以配置具体多少天的有效期。
+## 三、设置session的过期时间
+如果没有指定session的过期时间，那么默认是浏览器关闭后就自动结束。session.permanent = True在flask下则可以将有效期延长至一个月。下面有方法可以配置具体多少天的有效期。
 
 如果没有指定session的过期时间，那么默认是浏览器关闭后就自动结束
 
