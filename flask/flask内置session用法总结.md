@@ -1,4 +1,4 @@
-#Flask中的session详细用法教程
+# Flask中的session详细用法教程
 
 **Flask session 概念解释：**
 
@@ -8,13 +8,13 @@ session 是基于cookie实现， 保存在服务端的键值对（形式为 {随
 
  
 
-##一、配置SECRET_KEY
+## 一、配置SECRET_KEY
 
 因为flask的session是通过加密之后放到了cookie中。所以有加密就有密钥用于解密，所以，只要用到了flask的session模块就一定要配置“SECRET_KEY”这个全局宏。一般设置为24位的字符。配置方法一般有两种。
 
   
 
-###配置方法一：
+### 配置方法一：
 
 新建一个config.py的文件配置secret_key 
 
@@ -31,7 +31,7 @@ main.py
     from flask import Flask,session
     import config
     app = Flask(__name__)
-###配置方法二：
+### 配置方法二：
 
 直接在主运行文件里面配置。配置config的时候也是和操作字典是一样的 
 main.py
@@ -45,8 +45,8 @@ main.py
     # 或者
     app.secret_key = 'why would I tell you my secret key?'
     # key值可以使用随机数，或者自定义
-##二、操作session –操作session就如同操作字典！
-###1.设置session
+## 二、操作session –操作session就如同操作字典！
+### 1.设置session
     from flask import Flask,session
     import os
      
@@ -63,7 +63,7 @@ main.py
          app.run()
 
 
-###2.读取session
+### 2.读取session
  因为session就像字典一样所以，操作它的时候有两种方法：
 
 （1）result = session[‘key’] ：如果内容不存在，将会报异常
@@ -126,7 +126,7 @@ main.py
          return 'success'
      if __name__ == '__main__':
          app.run()
-###4.清除session中所有数据
+### 4.清除session中所有数据
      # encoding: utf-8
      
      from flask import Flask,session
