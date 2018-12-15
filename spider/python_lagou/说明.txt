@@ -1,0 +1,5 @@
+﻿环境:Python3.6 + windows
+爬虫框架：scrapy
+数据保存格式：json
+爬取思路：拉钩网站职位信息是ajax渲染后端返回的json数据，爬取思路为ajax，POST请求方式
+难点：反复研究发现Formrequest()请求中必须传入cookies，才能通过防反爬技术
